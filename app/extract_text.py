@@ -10,7 +10,7 @@ def extract_text_from_pdf(pdf_path):
 
 def save_all_texts(input_dir="data", output_dir="data"):
     for i in range(1, 6):  
-        pdf_file = f"{i}.pdf"
+        pdf_file = f"{i}.pdf" 
         pdf_path = os.path.join(input_dir, pdf_file)
         text = extract_text_from_pdf(pdf_path)
         with open(os.path.join(output_dir, f"{i}.txt"), "w", encoding="utf-8") as f:
